@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vyshu's Creative World — 3D Animated Portfolio of R. Vyshnavi, B.Tech CSE student at Narasaraopeta Engineering College." />
+    <meta name="keywords" content="Vyshu, R. Vyshnavi, Portfolio, 3D Portfolio, Lavender Dream, Web Developer, CSE, Narasaraopeta Engineering College" />
+    <title>Vyshu's Creative World ✨ | 3D Portfolio</title>
+    <!-- Google Fonts: Fredoka & Plus Jakarta Sans & Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // If opened directly as a file:// URL, attempt redirect only if dev server is active
+      if (window.location.protocol === 'file:') {
+        fetch('http://localhost:5173/', { mode: 'no-cors' })
+          .then(() => { window.location.replace('http://localhost:5173/'); })
+          .catch(() => { /* Keep fallback UI visible if server is offline */ });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Fallback display if opened via file:// protocol without a server -->
+      <div style="font-family: 'Plus Jakarta Sans', sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #FAF7FF 0%, #F1E9FD 50%, #E8DCF9 100%); padding: 20px; text-align: center;">
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 40px 30px; border-radius: 28px; box-shadow: 0 20px 45px rgba(139, 92, 246, 0.2); max-width: 520px; border: 1.5px solid #DDD6FE;">
+          <div style="font-size: 2.2rem; margin-bottom: 12px;">✨</div>
+          <h1 style="color: #2E1065; font-size: 1.8rem; margin-bottom: 12px; font-family: 'Fredoka', sans-serif;">Vyshu's Creative World</h1>
+          <p style="color: #5B487A; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">
+            To view this 3D portfolio, please view it through your browser at <strong>http://localhost:5173/</strong> or run <strong>Start_Portfolio.bat</strong>.
+          </p>
+          <a href="http://localhost:5173/" style="display: inline-block; padding: 14px 28px; border-radius: 9999px; background: linear-gradient(135deg, #8B5CF6, #EC4899); color: #ffffff; text-decoration: none; font-weight: 700; font-size: 1.05rem; box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4);">
+            Open 3D Portfolio in Browser ✨
+          </a>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
